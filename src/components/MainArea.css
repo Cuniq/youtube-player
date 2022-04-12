@@ -1,6 +1,7 @@
 .main-area {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .main-area__video-details {
