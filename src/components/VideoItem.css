@@ -1,0 +1,34 @@
+.video-item {
+  max-height: 140px;
+  background-color: #0c0c0c;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.video-item:hover {
+  background-color: #222222;
+}
+
+.video-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.video-item__img {
+  flex: 0 0 160px;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.video-item__description {
+  line-height: 1.4;
+}
+
+.video-item__description h4 {
+  margin: 0;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}

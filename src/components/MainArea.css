@@ -1,0 +1,12 @@
+.main-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-area__video-details {
+  flex: 0 1 0%;
+}
+
+.main-area__video-list {
+  flex: 0 1 480px;
+}

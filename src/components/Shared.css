@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px !important;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 680)) !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+body {
+  background-color: #181818;
+  color: white;
+}
+
+a {
+  color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p4 {
+  padding: 1.2rem;
+}

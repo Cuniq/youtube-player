@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
-
-console.log(`${process.env.REACT_APP_API_KEY}`);
 
 const rootContainer = ReactDOM.createRoot(document.getElementById("root")!);
 rootContainer.render(
