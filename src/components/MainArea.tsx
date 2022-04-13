@@ -12,7 +12,6 @@ export interface MainAreaProps {
 export interface MainAreaState {
   videos: IYoutubeVideo[] | null;
   selectedVideo: IYoutubeVideo | null;
-  term: string | null;
 }
 
 export default class MainArea extends React.Component<
@@ -25,7 +24,6 @@ export default class MainArea extends React.Component<
     this.state = {
       selectedVideo: null,
       videos: null,
-      term: null,
     };
   }
 
@@ -35,9 +33,8 @@ export default class MainArea extends React.Component<
     }
   }
 
-  componentDidUpdate(_prevProps: MainAreaProps, prevState: MainAreaState) {
-    if (this.props.term && prevState.term !== this.props.term) {
-      this.setState({ term: this.props.term });
+  componentDidUpdate(prevProps: MainAreaProps) {
+    if (this.props.term && prevProps.term !== this.props.term) {
       this.executeYoutubeSearch(this.props.term);
     }
   }
